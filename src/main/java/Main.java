@@ -1,5 +1,5 @@
 import Colour.Colour;
-import IniciarJuego.StartGame;
+import StartGame.StartGame;
 
 public class Main {
 

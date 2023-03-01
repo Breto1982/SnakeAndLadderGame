@@ -1,4 +1,4 @@
-package Jugador;
+package Player;
 
 import java.util.Arrays;
 

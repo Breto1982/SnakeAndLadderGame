@@ -1,8 +1,8 @@
-package Tablero;
+package Board;
 
 import Colour.Colour;
-import Jugador.Player;
-import Partida.Game;
+import Player.Player;
+import Game.Game;
 
 import java.util.Scanner;
 

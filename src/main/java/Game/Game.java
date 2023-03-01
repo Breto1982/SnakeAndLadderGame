@@ -1,8 +1,8 @@
-package Partida;
+package Game;
 
 import Colour.Colour;
 import Dice.Dice;
-import Jugador.Player;
+import Player.Player;
 
 import java.util.Locale;
 import java.util.Scanner;

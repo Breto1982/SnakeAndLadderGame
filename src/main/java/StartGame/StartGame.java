@@ -1,7 +1,7 @@
-package IniciarJuego;
+package StartGame;
 
 import Colour.Colour;
-import Jugador.EditPlayer;
+import Player.EditPlayer;
 
 import java.util.*;
 

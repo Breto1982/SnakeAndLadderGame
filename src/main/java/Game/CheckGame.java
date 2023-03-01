@@ -1,4 +1,4 @@
-package Partida;
+package Game;
 
 public class CheckGame {
 

@@ -1,7 +1,7 @@
-package Partida;
+package Game;
 
 import Colour.Colour;
-import Jugador.Player;
+import Player.Player;
 
 
 public class BoardGame {
