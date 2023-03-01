@@ -1,7 +1,7 @@
-package Jugador;
+package Player;
 
 import Colour.Colour;
-import Tablero.EditBoard;
+import Board.EditBoard;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;

@@ -1,4 +1,4 @@
-package Tablero;
+package Board;
 
 
 public class LadderAndSnake {
