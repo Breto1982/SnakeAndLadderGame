@@ -1,6 +1,6 @@
-package Colores;
+package Colour;
 
-public class Colores {
+public class Colour {
 
 
 
