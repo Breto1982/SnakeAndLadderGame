@@ -6,6 +6,9 @@ import Board.EditBoard;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+import static Colour.Colour.ANSI_RESET;
+import static Colour.Colour.RED;
+
 public class EditPlayer {
 
     public static void editPlayer(int numPlayers){
@@ -42,10 +45,10 @@ public class EditPlayer {
         try {
             player.setAge(sc.nextInt());
             if(player.getAge()<18){
-                System.out.println(Colour.RED +"The age of player has to be greater than 18"+ Colour.ANSI_RESET);
+                System.out.println(RED +"The age of player has to be greater than 18"+ ANSI_RESET);
             }
         } catch (InputMismatchException e) {
-            System.out.println(Colour.RED +"The value introduced is not correct"+ Colour.ANSI_RESET);
+            System.out.println(RED +"The value introduced is not correct"+ ANSI_RESET);
             sc.nextLine();
         }
         }while(player.getAge()<18);

@@ -1,10 +1,12 @@
 package Board;
 
-import Colour.Colour;
+
 import Player.Player;
 import Game.Game;
 
 import java.util.Scanner;
+
+import static Colour.Colour.*;
 
 public class EditBoard {
 
@@ -23,15 +25,15 @@ public class EditBoard {
 
             System.out.println();
             System.out.println();
-            System.out.println(Colour.BLUE + "    -->The name of players  " + (i + 1) + " is " + players[i].getName() + Colour.ANSI_RESET);
+            System.out.println(BLUE + "    -->The name of players  " + (i + 1) + " is " + players[i].getName() + ANSI_RESET);
 
 
             System.out.println();
             System.out.println();
-            System.out.println(Colour.GREEN + " <---The board of " + players[i].getName() + " is the next--->" + Colour.ANSI_RESET);
+            System.out.println(GREEN + " <---The board of " + players[i].getName() + " is the next--->" + ANSI_RESET);
 
 
-            new LadderAndSnake();
+            LadderAndSnake ladderAndSnake=new LadderAndSnake();
 
             String [][] board = new String[10][10];
             int actualPosition = 100;
@@ -46,7 +48,7 @@ public class EditBoard {
                     System.out.print("         ");
                 }
 
-                System.out.print(Colour.ANSI_CYAN_BACKGROUND + Colour.BLACK + "  " + Colour.ANSI_RESET);
+                System.out.print(ANSI_CYAN_BACKGROUND + BLACK + "  " + ANSI_RESET);
                 if (j % 2 == 0) {
 
                     actualPosition=(j*10)+1;
@@ -54,35 +56,35 @@ public class EditBoard {
                     for (int k = board.length-1; k >= 0; k--) {
 
 
-                        if(LadderAndSnake.Check(actualPosition)=="") {
+                        if(ladderAndSnake.Check(actualPosition)=="") {
 
                             board[j][k] = String.valueOf(actualPosition);
                         }else{
 
-                            board[j][k]= LadderAndSnake.Check(actualPosition);
+                            board[j][k]= ladderAndSnake.Check(actualPosition);
                         }
 
-                        System.out.print(Colour.ANSI_CYAN_BACKGROUND + Colour.BLACK + board[j][k] + Colour.ANSI_RESET);
+                        System.out.print(ANSI_CYAN_BACKGROUND + BLACK + board[j][k] + ANSI_RESET);
                         if(j==0){
-                            System.out.print(Colour.ANSI_CYAN_BACKGROUND + Colour.BLACK + "   " + Colour.ANSI_RESET);
+                            System.out.print(ANSI_CYAN_BACKGROUND + BLACK + "   " + ANSI_RESET);
                         }else{
-                        System.out.print(Colour.ANSI_CYAN_BACKGROUND + Colour.BLACK + "  " + Colour.ANSI_RESET);}
+                        System.out.print(ANSI_CYAN_BACKGROUND + BLACK + "  " + ANSI_RESET);}
                         actualPosition++;
                     }
                 } else {
                     actualPosition=(j+1)*10;
                     for (int k = 0; k < board.length; k++) {
 
-                        if(LadderAndSnake.Check(actualPosition)=="") {
+                        if(ladderAndSnake.Check(actualPosition)=="") {
 
                             board[j][k] = String.valueOf(actualPosition);
                         }else{
 
-                            board[j][k]= LadderAndSnake.Check(actualPosition);
+                            board[j][k]= ladderAndSnake.Check(actualPosition);
                         }
 
-                        System.out.print(Colour.ANSI_CYAN_BACKGROUND + Colour.BLACK + board[j][k] + Colour.ANSI_RESET);
-                        System.out.print(Colour.ANSI_CYAN_BACKGROUND + Colour.BLACK + "  " + Colour.ANSI_RESET);
+                        System.out.print(ANSI_CYAN_BACKGROUND + BLACK + board[j][k] + ANSI_RESET);
+                        System.out.print(ANSI_CYAN_BACKGROUND +BLACK + "  " + ANSI_RESET);
                         actualPosition--;
                     }
                 }
