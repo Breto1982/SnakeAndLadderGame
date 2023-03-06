@@ -46,14 +46,17 @@ public class CheckGame {
             case 64:
                 position-=4;
                 break;
+            case 71:
+                position+=20;
+                break;
             case 74:
                 position-=21;
                 break;
             case 78:
                 position+=20;
                 break;
-            case 87:
-                position+=7;
+            case 89:
+                position-=21;
                 break;
             case 92:
                 position-=4;

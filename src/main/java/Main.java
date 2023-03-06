@@ -15,8 +15,9 @@ public class Main {
         System.out.println("_________The ladders will be shown by # and the snakkers by g__________"+ Colour.ANSI_RESET);
 
 
-        new StartGame();
-        StartGame.startGame();
+
+        StartGame startGame =new StartGame();
+        startGame.startGame();
 
     }
 
