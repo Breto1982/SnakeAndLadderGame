@@ -30,7 +30,7 @@ Java 16
 ## Authors ✒️
 
 
-* **Victor Rubio Ibañez** - *Trabajo Inicial* - [Breto1982](https://github.com/breto1982)
+* **Victor Rubio Ibañez** - *Trabajo Inicial* - [Breto1982](https://github.com/VictorRubioIba)
 
 ## Licence 📄
 
