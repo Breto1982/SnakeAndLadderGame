@@ -11,13 +11,14 @@ import static Colour.Colour.RED;
 
 public class EditPlayer {
 
-    public static void editPlayer(int numPlayers){
+    Scanner sc= new Scanner(System.in);
+
+    public  void editPlayer(int numPlayers){
 
         /*
         * we create an Array of players, and we introduce the name and the age by console
         * */
 
-        Scanner sc= new Scanner(System.in);
 
      Player[] players = new Player[numPlayers];
 
@@ -61,8 +62,8 @@ public class EditPlayer {
      *
      * */
 
-     new EditBoard();
-     EditBoard.editBoard(players);
+     EditBoard editBoard=new EditBoard();
+     editBoard.editBoard(players);
 
     }
 }

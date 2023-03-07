@@ -3,7 +3,7 @@ package Board;
 
 public class LadderAndSnake {
 
-    public  String Check(int position){
+    public  static String Check(int position){
 
         String returned="";
 

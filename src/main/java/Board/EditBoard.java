@@ -10,15 +10,13 @@ import static Colour.Colour.*;
 
 public class EditBoard {
 
-    public static void editBoard(Player[] players) {
+    Scanner sc = new Scanner(System.in);
 
+    public  void editBoard(Player[] players) {
 
         /*
         * We crete a board for a player and show by console
         * */
-
-        Scanner sc = new Scanner(System.in);
-
 
         for (int i = 0; i < players.length; i++) {
 
@@ -33,7 +31,7 @@ public class EditBoard {
             System.out.println(GREEN + " <---The board of " + players[i].getName() + " is the next--->" + ANSI_RESET);
 
 
-            LadderAndSnake ladderAndSnake=new LadderAndSnake();
+             new LadderAndSnake();
 
             String [][] board = new String[10][10];
             int actualPosition = 100;
@@ -56,12 +54,12 @@ public class EditBoard {
                     for (int k = board.length-1; k >= 0; k--) {
 
 
-                        if(ladderAndSnake.Check(actualPosition)=="") {
+                        if(LadderAndSnake.Check(actualPosition)=="") {
 
                             board[j][k] = String.valueOf(actualPosition);
                         }else{
 
-                            board[j][k]= ladderAndSnake.Check(actualPosition);
+                            board[j][k]= LadderAndSnake.Check(actualPosition);
                         }
 
                         System.out.print(ANSI_CYAN_BACKGROUND + BLACK + board[j][k] + ANSI_RESET);
@@ -75,12 +73,12 @@ public class EditBoard {
                     actualPosition=(j+1)*10;
                     for (int k = 0; k < board.length; k++) {
 
-                        if(ladderAndSnake.Check(actualPosition)=="") {
+                        if(LadderAndSnake.Check(actualPosition)=="") {
 
                             board[j][k] = String.valueOf(actualPosition);
                         }else{
 
-                            board[j][k]= ladderAndSnake.Check(actualPosition);
+                            board[j][k]= LadderAndSnake.Check(actualPosition);
                         }
 
                         System.out.print(ANSI_CYAN_BACKGROUND + BLACK + board[j][k] + ANSI_RESET);
@@ -90,14 +88,12 @@ public class EditBoard {
                 }
             }
 
-
-
                 players[i].setBoard(board);
 
                 System.out.println();
 
         }
-        new Game();
-        Game.game(players);
+        Game game =new Game();
+        game.game(players);
     }
 }
