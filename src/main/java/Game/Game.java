@@ -12,7 +12,7 @@ import static Colour.Colour.*;
 
 public class Game {
 
-    public static void game(Player[] players){
+    public  void game(Player[] players){
 
         Scanner sc= new Scanner(System.in);
 

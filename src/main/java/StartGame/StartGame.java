@@ -8,7 +8,9 @@ import static Colour.Colour.*;
 
 
 public class StartGame {
+
     Scanner sc = new Scanner(System.in);
+
     public void startGame(){
 
         /*
@@ -36,9 +38,9 @@ public class StartGame {
         * Now, we call to class EditPlayer for edit all players
         * */
 
-        new EditPlayer();
+        EditPlayer editPlayer =new EditPlayer();
 
-        EditPlayer.editPlayer(numPlayers);
+        editPlayer.editPlayer(numPlayers);
     }
 
 
